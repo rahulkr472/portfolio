@@ -5,7 +5,9 @@ let logo = document.querySelector("#one h2 a")
 let maintext = document.querySelectorAll("#two h1")
 let btn = document.querySelectorAll("#btn2");
 let list = document.querySelectorAll("#one ul a");
-let projectlist1 = document.querySelector("#project-list")
+let projectlist1 = document.querySelectorAll(".project-box #project-list a")
+let projectbox = document.querySelector("#project-list")
+let crossbtn = document.querySelector("#crossbtn")
 
 console.log(projectlist1);
 
@@ -20,7 +22,14 @@ night.addEventListener("click",() => {
     list.forEach((val) => {
         val.classList.add("active")
     })
-    projectlist1.classList.add("active")
+
+    projectlist1.forEach((val) => {
+        val.classList.add("active")
+    })
+   
+    projectbox.classList.add("active")
+    crossbtn.style.color = "#fff"
+
 
      banner.style.backgroundColor = "#333"
     night.style.display = "none"
@@ -39,6 +48,13 @@ day.addEventListener("click",() => {
     list.forEach((val) => {
         val.classList.remove("active")
     })
+
+    projectlist1.forEach((val) => {
+        val.classList.remove("active")
+    })
+
+    projectbox.classList.remove("active")
+     crossbtn.style.color = "#000"
 
      banner.style.backgroundColor = "white"
     //  console.log("hello");
@@ -82,6 +98,13 @@ projectlist.addEventListener("mouseleave", () => {
     
 })
 
+let social = document.querySelector("#social")
+let btn1 = document.querySelector("#btn1")
 
+btn1.addEventListener("click", () => {
+    social.classList.add("active")
+})
 
-
+crossbtn.addEventListener("click", () => {
+    social.classList.remove("active")
+})

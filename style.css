@@ -70,7 +70,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* border: 1px solid; */
-    width: 45%;
+    width:60%;
     list-style-type: none;
     font-size: 19px;
 }
@@ -235,7 +235,7 @@ transition: .5s;
     padding: 10px 15px;
     position: absolute;
     top: 18%;
-    left:72%;
+    right:30%;
     list-style-type: none;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #3333331f;
@@ -243,7 +243,7 @@ transition: .5s;
 }
 
 #project-list.active {
-    color: #fff;
+    box-shadow: 5px 5px 10px #ffffff25;
 }
 
 
@@ -261,6 +261,10 @@ transition: .5s;
     /* border: 1px solid; */
 }
 
+#project-list a.active {
+    color: #fff;
+} 
+
 #project-list a:hover {
     /* border: 1px solid; */
     color: red;
@@ -270,30 +274,53 @@ transition: .5s;
 
 #social {
     border: 1px solid;
-    width: 22%;
-    height: 40px;
+    width: 23%;
+    /* height: 40px */
     margin-top: 20px;
     padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius:13px ;
+    border-bottom-left-radius:13px ;
     border-top-right-radius: 50px ;
     border-bottom-right-radius: 50px ;
+    transition: all .2s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#social.active {
+    transition: all .7s ease-in;
+    transform: translateX(30px);
+    opacity: 1;
+    visibility: visible;
 }
 
 #social ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #social ul li {
     /* margin-top: 20px; */
     /* height: 20px; */
     padding: 5px 5px;
+    border: none;
+
 }
 
 
 #social ul a {
-    color: black;
-    border: 1px solid;
+    color: white;
+    /* border: 1px solid; */
     padding: 5px 10px;
     border-radius: 50px;
     font-size: 20px;
+
+}
+
+#crossbtn {
+    font-size: 20px;
+    padding: 10px 11px;
 }
