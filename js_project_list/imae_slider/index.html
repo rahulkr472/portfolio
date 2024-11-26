@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="mx-72 my-12 h-[80vh]">
+   <div id="imageslider" class=" h-[500px] w-[900px] rounded-xl shadow-lg shadow-slate-400 relative overflow-hidden">
+         <div id="slides" class="w-[100%] h-[100%]">
+
+            <img id="slider" class="w-[100%] h-[100%]" src="download.jpeg" alt="">
+            <img id="slider"  class="w-[100%] h-[100%]"  src="download.png" alt="">
+            <img id="slider"  class="w-[100%] h-[100%]"  src="images.jpeg" alt="">
+
+         </div>
+   </div>
+   <button id="prev" class="text-4xl text-black " onclick="prev()">&#10094</button>
+   <button id="next" class="text-4xl text-black" onclick="next()">&#10095</button>
+
+   <script src="app.js"></script>
+</body>
+</html>

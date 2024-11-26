@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    /* border: 1px solid; */
+    height: 65vh;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.218);
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.question {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.answer{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    word-spacing: 30px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5); /* Scale to 1.5 times the original size */
+    /* margin-left: 10px */
+}
+
+.marks {
+    margin-top: 50px;
+    text-transform: uppercase;
+    /* display: none; */
+}
+
+.marks h3{
+    display: none;
+}
+
+ul{
+    text-align: left;
+    padding: 0px 10px;
+    
+}
+
+ul li {
+    /* border: 1px solid; */
+    list-style-type: none;
+    /* display: flex; */
+}
+
+ul li label {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid ;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 24px;
+    color: green;
+}

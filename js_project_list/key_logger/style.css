@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main-div {
+   text-align: center;
+}
+
+.btn-comtainer{
+    display: flex;
+    gap: 30px;
+    margin: 0px 20%;
+}
+
+#btn-value, #btn-type {
+    border: none;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #ff9239;
+    font-size: 20px;
+}
+#btn-type {
+    background-color: grey;
+}
+
+button {
+    padding: 11px 30px;
+    border: 1px solid slategray;
+    border-radius: 7px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+
+
+

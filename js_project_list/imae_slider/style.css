@@ -1,0 +1,26 @@
+#slides {
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slider {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    transform: translateY(-50px);
+    border: 1px solid black;
+    color: white;
+    background: #000;
+    
+
+}
+
+#next {
+    right: 13%;
+}

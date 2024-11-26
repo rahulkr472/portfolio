@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    font-family: sans-serif;
+}
+
+.wheather {
+   
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.082);
+    /* display: none; */
+    line-height: 10px;
+    text-align: center;
+    display: none;
+}
+
+.wheather #city {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wheather #temp {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.wheather #cloud {
+    font-size: 18px;
+    color: gray;
+}
